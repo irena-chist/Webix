@@ -1,0 +1,76 @@
+.frame {
+    margin: 20px auto;
+    padding: 35px;
+    width: 500px;
+    min-height: 200px;
+    background-color: rgb(224, 255, 255);
+    border: grey;
+    border-radius: 8px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input {
+    width: 350px;
+    height: 45px;
+    outline: none;
+}
+
+.wrapper_btn {
+    width: 115px;
+    height: 50px;
+}
+
+.wrapper_tags {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.tag {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.tag_name {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.tag_close {
+    position: relative;
+    cursor: pointer;
+}
+
+.tag_close::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: grey;
+    transform: rotate(45deg);
+}
+
+.tag_close::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: grey;
+    transform: rotate(-45deg);
+}
+
+#chbox {
+    margin-top: 50px;
+}
